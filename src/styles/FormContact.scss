@@ -1,0 +1,76 @@
+.form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  &__input {
+    height: 2rem;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
+    letter-spacing: 0.5px;
+    border: none;
+    &--text {
+      height: 4rem;
+    }
+  }
+
+  &__hr {
+    transform: scale(0);
+    transform-origin: left;
+    color: gray;
+  }
+
+  &__input:focus + &__hr {
+    animation: showFromLeft 0.5s forwards;
+  }
+
+  &__btn {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    padding: 0.4rem 3rem;
+    background-color: #262626;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &__incorrect {
+    height: 0.5rem;
+    line-height: 0.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.6rem;
+  }
+
+  &__incorectMessage {
+    font-size: 0.5rem;
+    line-height: 0.5rem;
+    letter-spacing: 1px;
+    color: brown;
+    text-transform: uppercase;
+    animation: showUp 0.5s forwards;
+  }
+}
+/*portrait*/
+@media (min-width: 320px) and (orientation: portrait) {
+  .form {
+    margin-top: 4rem;
+    &__input {
+      &--text {
+        height: 10rem;
+      }
+    }
+  }
+}
+/*landscape*/
+@media (max-width: 1280px) and (orientation: landscape) {
+  .form {
+    margin-top: 3rem;
+    &__input {
+      &--text {
+        height: 10rem;
+      }
+    }
+  }
+}

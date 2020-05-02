@@ -1,0 +1,63 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &__Col {
+    width: 38%;
+
+    &--west {
+      margin-left: 8%;
+      margin-right: 4%;
+    }
+    &--east {
+      margin-left: 4%;
+      margin-right: 8%;
+    }
+  }
+  &__image {
+    width: 100%;
+    margin-bottom: 20%;
+  }
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+  .home {
+    &__Col {
+      width: 45.5%;
+
+      &--west {
+        margin-left: 3%;
+        margin-right: 1.5%;
+      }
+      &--east {
+        margin-left: 1.5%;
+        margin-right: 3%;
+      }
+    }
+    &__image {
+      width: 100%;
+      margin-bottom: 6%;
+    }
+  }
+}
+@media (max-width: 800px) and (orientation: landscape) {
+  .home {
+    &__Col {
+      width: 45.5%;
+
+      &--west {
+        margin-left: 3%;
+        margin-right: 1.5%;
+      }
+      &--east {
+        margin-left: 1.5%;
+        margin-right: 3%;
+      }
+    }
+    &__image {
+      width: 100%;
+      margin-bottom: 6%;
+    }
+  }
+}

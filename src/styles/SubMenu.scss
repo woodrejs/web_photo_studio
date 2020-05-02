@@ -1,0 +1,39 @@
+.subMenu {
+  transition: 0.5s;
+  height: 0vh;
+  min-height: 0vh;
+  overflow-y: scroll;
+  transform-origin: top;
+
+  &--active {
+    min-height: 20vh;
+    max-height: 30vh;
+  }
+  &__item {
+    margin: 1rem 0;
+    animation: showUp 0.5s;
+  }
+  &__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    transition: 0.2s;
+    outline: none;
+    font-size: 0.6rem;
+  }
+  &__link:hover {
+    color: goldenrod;
+  }
+}
+/*portrait*/
+@media (max-width: 600px) and (orientation: portrait) {
+  .subMenu {
+    display: none;
+  }
+}
+/*landscape*/
+@media (max-width: 800px) and (orientation: landscape) {
+  .subMenu {
+    display: none;
+  }
+}

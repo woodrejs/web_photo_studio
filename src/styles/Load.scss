@@ -1,0 +1,19 @@
+.load {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.load__canvas {
+  background-color: #262626;
+}
+
+.sessionPage__load,
+.home__load {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

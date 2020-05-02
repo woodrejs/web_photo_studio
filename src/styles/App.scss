@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #262626;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(251, 251, 251);
+}
+.app {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+
+  &__header {
+    min-height: 100vh;
+    flex: 1;
+  }
+
+  &__main {
+    min-height: 100vh;
+    flex: 3;
+    padding-top: 2rem;
+  }
+}
+
+/*portrait*/
+@media (max-width: 600px) and (orientation: portrait) {
+  .app {
+    flex-direction: column;
+    &__header {
+      min-height: 10vh;
+    }
+    &__main {
+      min-height: 90vh;
+      padding-top: 0.5rem;
+    }
+  }
+}
+/*landscape*/
+@media (max-width: 800px) and (orientation: landscape) {
+  .app {
+    flex-direction: column;
+    &__header {
+      min-height: 15vh;
+    }
+    &__main {
+      min-height: 85vh;
+      padding-top: 0.5rem;
+    }
+  }
+}
+
+/*rem size*/
+@media (min-width: 320px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (min-width: 375px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width: 414px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (min-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}

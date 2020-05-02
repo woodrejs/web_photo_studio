@@ -1,0 +1,46 @@
+.menuContainer {
+  z-index: 101;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: fixed;
+  background-color: rgb(251, 251, 251);
+
+  &__div {
+    flex: 1;
+  }
+
+  &__logo {
+    width: 7rem;
+  }
+}
+
+/*portrait*/
+@media (max-width: 600px) and (orientation: portrait) {
+  .menuContainer {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 3%;
+    height: 10vh;
+    width: 100%;
+
+    &__logo {
+      width: 4rem;
+    }
+  }
+}
+/*landscape*/
+@media (max-width: 800px) and (orientation: landscape) {
+  .menuContainer {
+    flex-direction: row;
+    align-items: center;
+    height: 15vh;
+    padding: 0 3%;
+    width: 100%;
+
+    &__logo {
+      width: 4rem;
+    }
+  }
+}

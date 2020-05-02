@@ -1,0 +1,34 @@
+.tileImg {
+  width: 20%;
+  margin: 0 2.5% 5% 2.5%;
+  position: relative;
+  opacity: 0;
+  display: inline-flex;
+
+  vertical-align: middle;
+  display: -webkit-inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-flex-pack: center;
+  -webkit-justify-content: center;
+  -webkit-flex-align: center;
+  -webkit-align-items: center;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__mask {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s;
+    position: absolute;
+    background-color: black;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.2;
+    }
+  }
+}

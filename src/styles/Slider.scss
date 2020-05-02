@@ -1,0 +1,49 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  animation: showUp 0.8s;
+
+  &__container {
+    flex: 1;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  &__image {
+    height: 100%;
+    max-width: 40vw;
+    position: absolute;
+  }
+}
+
+/*portrait*/
+@media (min-width: 320px) and (orientation: portrait) {
+  .slider {
+    &__container {
+      flex: 5;
+    }
+    &__image {
+      height: 90%;
+      max-width: 80vw;
+    }
+  }
+}
+/*landscape*/
+@media (max-width: 736px) and (orientation: landscape) {
+  .slider {
+    height: 80vh;
+
+    &__container {
+      flex: 5;
+    }
+    &__image {
+      height: 90%;
+      max-width: 80vw;
+    }
+  }
+}

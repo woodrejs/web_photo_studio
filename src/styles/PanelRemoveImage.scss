@@ -1,0 +1,27 @@
+.imageData {
+  width: 35vw;
+  background-color: rgb(245, 245, 245);
+  padding: 0.3rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__btn {
+    border: none;
+    height: 2rem;
+    width: 0.8rem;
+    line-height: 2rem;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: red;
+  }
+
+  &__img {
+    height: 2rem;
+    animation: showUp 0.8s;
+  }
+
+  &__span {
+    font-size: 0.5rem;
+  }
+}

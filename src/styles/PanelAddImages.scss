@@ -1,0 +1,15 @@
+.panelAddImages {
+  background-color: rgb(230, 230, 230);
+  width: 35vw;
+  padding: 0.7rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__name {
+    cursor: pointer;
+    width: 10vw;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+  }
+}

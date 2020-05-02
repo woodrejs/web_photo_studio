@@ -1,0 +1,10 @@
+.sessionsPage {
+  width: 100%;
+  min-height: 95vh;
+  &__load {
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+  }
+}

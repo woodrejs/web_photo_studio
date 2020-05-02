@@ -1,0 +1,15 @@
+.nameInput {
+  height: 2rem;
+
+  &__input {
+    height: 100%;
+    border: none;
+  }
+  &__btn {
+    height: 100%;
+    background-color: rgba(200, 200, 200, 1);
+    padding: 0 1rem;
+    border: none;
+    cursor: pointer;
+  }
+}

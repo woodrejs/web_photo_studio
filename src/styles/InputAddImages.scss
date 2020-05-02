@@ -1,0 +1,32 @@
+.addImg {
+  height: 2rem;
+  display: flex;
+
+  &__input {
+    display: none;
+  }
+  &__btn {
+    height: 100%;
+    padding: 0 0.5rem;
+    font-size: 0.7rem;
+    line-height: 2rem;
+    background-color: rgba(200, 200, 200, 1);
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  &__rmv {
+    width: 0.8rem;
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: red;
+    cursor: pointer;
+  }
+}
+//hide 'x' in home panel
+#panelHome {
+  .addImg__rmv {
+    display: none;
+  }
+}

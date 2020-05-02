@@ -1,0 +1,9 @@
+.sessionPage {
+  position: relative;
+}
+/*portrait*/
+@media (max-width: 1280px) and (orientation: landscape) {
+  .sessionPage {
+    padding-bottom: 1rem;
+  }
+}

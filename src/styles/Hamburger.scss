@@ -1,0 +1,67 @@
+.hamburger {
+  display: none;
+  z-index: 100;
+  margin-left: 1.5rem;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  &--active {
+    transform: translateX(-20vw);
+  }
+  &__box {
+    height: 90%;
+    width: 90%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__line {
+    border-bottom: 2px solid #262626;
+    width: 90%;
+    position: absolute;
+    transition: 0.4s;
+
+    &--top {
+      transform: translateY(0.5rem);
+    }
+    &--bot {
+      transform: translateY(-0.5rem);
+    }
+    &--topActive {
+      transform: rotateZ(45deg);
+    }
+    &--midActive {
+      display: none;
+    }
+    &--botActive {
+      transform: rotateZ(-45deg);
+    }
+  }
+}
+
+/*portrait*/
+@media (max-width: 600px) and (orientation: portrait) {
+  .hamburger {
+    display: flex;
+  }
+}
+/*landscape*/
+@media (max-width: 800px) and (orientation: landscape) {
+  .hamburger {
+    height: 15vh;
+    display: flex;
+    margin: 0;
+    &--active {
+      transform: translateX(-75vw);
+    }
+    &__box {
+      &--active {
+        transform: scale(0.5);
+      }
+    }
+  }
+}

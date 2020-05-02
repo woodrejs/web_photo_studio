@@ -1,0 +1,50 @@
+.log {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: showUp 0.5s forwards;
+
+  &__form {
+    height: 40vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  &__input {
+    height: 2rem;
+    border: none;
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+  }
+
+  &__input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+  }
+
+  &__btn {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 0.4rem 3rem;
+    background-color: #262626;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &__incorrect {
+    height: 1.5rem;
+  }
+
+  &__incorrectTxt {
+    color: red;
+    animation: showUp 0.5s forwards;
+  }
+}
